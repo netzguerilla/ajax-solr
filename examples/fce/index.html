@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FCE Suche</title>
+  <link rel="stylesheet" href="css/fce.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
+  <script data-main="js/fce" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>FCE Suche</h1>
+      <h2>Durchsuche das Archiv der Europäischen Bürgerinnenforum</h2>
+    </div>
+
+    <div class="right">
+      <div id="result">
+        <div id="navigation">
+          <ul id="pager"></ul>
+          <div id="pager-header"></div>
+        </div>
+        <div id="docs"></div>
+      </div>
+    </div>
+
+    <div class="left">
+      <h2>Aktuelle Auswahl</h2>
+      <ul id="selection"></ul>
+
+      <h2>Suche</h2>
+      <span id="search_help">(ESC drücken um die Vorschläge zu schießen)</span>
+      <ul id="search">
+        <input type="text" id="query" name="query" autocomplete="off">
+      </ul>
+
+      <h2>Top Tags</h2>
+      <div class="tagcloud" id="tags"></div>
+
+      <h2>Top Themen</h2>
+      <div class="tagcloud" id="thema"></div>
+
+      <h2>Top Kampangen</h2>
+      <div class="tagcloud" id="kampagne"></div>
+
+      <h2>Zeitpunk auswählen</h2>
+      <div id="calendar"></div>
+
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</body>
+</html>
