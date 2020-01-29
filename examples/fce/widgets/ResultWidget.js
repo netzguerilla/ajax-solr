@@ -75,8 +75,10 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
       snippet += doc.body_txt_de;
     }
 
+    var date = new Date(doc.pub_date);
     var output = '<div><a href="' + doc.url + '"><h2>' + doc.title_txt_de + '</h2></a>';
     output += '<p id="links_' + doc.id + '" class="links"></p>';
+    output += '<p>'+ doc.author_txt_de + " " + date.toLocaleDateString("de-DE") + '</p>';
     output += '<p>' + snippet + '</p></div>';
     return output;
   },
