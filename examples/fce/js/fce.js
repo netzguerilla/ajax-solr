@@ -25,7 +25,7 @@ define([
 ], function () {
   $(function () {
     Manager = new AjaxSolr.Manager({
-	    solrUrl: 'http://example.com:8983/solr/fce/'
+	    solrUrl: 'https://search.forumcivique.org/'
     });
     Manager.addWidget(new AjaxSolr.ResultWidget({
       id: 'result',
