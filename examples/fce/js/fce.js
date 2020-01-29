@@ -63,11 +63,6 @@ define([
       target: '#countries',
       field: 'countryCodes'
     })); */
-    Manager.addWidget(new AjaxSolr.CalendarWidget({
-      id: 'calendar',
-      target: '#calendar',
-      field: 'pub_date'
-    }));
     Manager.init();
     Manager.store.addByValue('q', '*:*');
     var params = {
@@ -79,10 +74,6 @@ define([
       'defType':'edismax',
       'qf': 'title_txt_de^3 body_txt_de^2 author_txt_de',
       'stopwords': true,
-      'facet.range': 'pub_date',
-      'facet.range.start': '2009-02-1T00:00:00.000Z/DAY',
-      'facet.range.end': '2019-10-31T00:00:00.000Z/DAY',
-      'facet.range.gap': '+1MONTH'
     };
     for (var name in params) {
       Manager.store.addByValue(name, params[name]);
