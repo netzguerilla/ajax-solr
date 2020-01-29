@@ -58,11 +58,6 @@ define([
       target: '#search',
       fields: [ 'title_txt_de', 'body_txt_de', 'author_txt_de' ]
     }));
-/*    Manager.addWidget(new AjaxSolr.CountryCodeWidget({
-      id: 'countries',
-      target: '#countries',
-      field: 'countryCodes'
-    })); */
     Manager.init();
     Manager.store.addByValue('q', '*:*');
     var params = {
