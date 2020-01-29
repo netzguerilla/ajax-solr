@@ -19,8 +19,6 @@ define([
   'fce/TagcloudWidget',
   'fce/CurrentSearchWidget.9',
   'fce/AutocompleteWidget',
-  'fce/CountryCodeWidget',
-  'fce/CalendarWidget',
   'widgets/jquery/PagerWidget'
 ], function () {
   $(function () {
