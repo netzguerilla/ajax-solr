@@ -77,7 +77,7 @@ define([
       'facet.mincount': 1,
       'f.topics.facet.limit': 50,
       'defType':'edismax',
-      'qf': 'title_txt_de^3 body_txt_de^2 author_txt_de text_fr',
+      'qf': 'title_txt_de^3 body_txt_de^2 author_txt_de',
       'stopwords': true,
       'facet.range': 'pub_date',
       'facet.range.start': '2009-02-1T00:00:00.000Z/DAY',
